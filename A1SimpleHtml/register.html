@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create new customer account </title>
+      <!-- Icon Font -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="https://www.freelogovectors.net/wp-content/uploads/2018/09/rado_logo-600x123.png">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <!-- Header Design -->
+    <nav class="navbar">
+        <!-- <video src="videos/Rado Centrix - Elegant in its simplicity - Rado (720p, h264).mp4" type="video/mp4" autoplay muted loop></video> -->
+        <div class="navbar-up">
+            <div class="contact">
+                <p>Contact Us 0345 899 1857</p>
+            </div>
+            <div class="locator">
+                <a href="#">Store Locator<i class="fa-solid fa-location-dot"></i></a>
+                <a href="#">United kingdom/English </a>
+            </div>
+        </div>
+        <div class="navbar-down">
+            <div class="navbar-icon">
+                <a href="men.html">Men</a>
+                <a href="women.html">Women</a>
+                <a href="cerawatches.html">Creamics Watches</a>
+                <a href="#">Feel Rado</a>
+                <a href="#">Services</a>
+            </div>
+            <a href="index.html"><div class="navbar-main-text">
+                <h2>RADO</h2>
+                <p>SWITZERLAND</p>
+            </div>
+            </a>
+        
+            <div class="navbar-icon-left">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-heart"></i>
+                <a href="login.html"><i class="fa-regular fa-user"></i></a>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- main content -->
+    <section>
+        <h1>Create New Customer Account</h1>
+        <form>
+            <h2>Personal Information</h2>
+
+            <div class="form-section">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="salutation">Salutation</label>
+                        <select id="salutation" name="salutation">
+                            <option value="">Please select</option>
+                            <option value="mr">Mr.</option>
+                            <option value="mrs">Mrs.</option>
+                            <option value="ms">Ms.</option>
+                            <option value="dr">Dr.</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName" class="required">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName" class="required">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="required">Date of Birth</label>
+                        <div class="date-of-birth">
+                            <select name="month" required>
+                                <option value="">Month</option>
+                                <!-- Months would be populated here -->
+                            </select>
+                            <select name="day" required>
+                                <option value="">Day</option>
+                                <!-- Days would be populated here -->
+                            </select>
+                            <select name="year" required>
+                                <option value="">Year</option>
+                                <!-- Years would be populated here -->
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="address" class="required">Address</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city" class="required">City</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="state" class="required">State/Province</label>
+                        <select id="state" name="state" required>
+                            <option value="">Please select a region, state or province.</option>
+                            <!-- States would be populated here -->
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="county">County</label>
+                        <input type="text" id="county" name="county">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="zip" class="required">Zip/Postal Code</label>
+                        <input type="text" id="zip" name="zip" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="country" class="required">Country</label>
+                        <select id="country" name="country" required>
+                            <option value="US">United States</option>
+                            <!-- Other countries would be listed here -->
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="required">Phone Number (for customer service purpose)</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <h2>Communication</h2>
+
+            <div class="form-section">
+                <p>I prefer to receive communication from Rado by:</p>
+
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="com-email" name="communication[]" value="email">
+                        <label for="com-email">Emails</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="com-sms" name="communication[]" value="sms">
+                        <label for="com-sms">SMS</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="com-mail" name="communication[]" value="mail">
+                        <label for="com-mail">Mails</label>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <h2>Sign-in Information</h2>
+
+            <div class="form-section">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email" class="required"><strong>Email</strong></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="password" class="required"><strong>Password</strong></label>
+                        <input type="password" id="password" name="password" required>
+                        <div class="password-strength">Password Strength: No Password</div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="confirm-password" class="required"><strong>Confirm Password</strong></label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                </div>
+
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms" class="required">I want to create an account and accept the Terms of Use. I
+                            confirm to have read and understood the Privacy Notice.</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="marketing" name="marketing">
+                        <label for="marketing">I agree that Rado contacts me about Rado products, services, events or
+                            offers and consent that Rado processes my personal data for this purpose. I confirm to have
+                            read and understood the Privacy Notice and the Cookie notice. I can always unsubscribe by
+                            clicking the opt-out link in the communication message.</label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Create an Account</button>
+        </form>
+
+    </section>
+    <!-- Footer section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">All our services</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Store Locator</a></li>
+                    <li><a href="#">Catalogue</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Legal & Corporate</h3>
+                <ul>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Notice</a></li>
+                    <li><a href="#">Cookies Notice</a></li>
+                    <li><a href="#">Cookie setting</a></li>
+                    <li><a href="#">Impressum</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Press Room</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section newsletter">
+                <h3>Newsletter</h3>
+                <input type="email" placeholder="Enter your email address">
+                <button>Subscribe</button>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025, Rado Watch Co Ltd. All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
