@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CERAMIC WATCH COLLECTION</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-black text-white">
+        <!-- Top Navbar -->
+        <div class="flex justify-between px-20 py-4">
+            <div class="text-sm pt-4">
+                <p>Contact Us 0345 899 1857</p>
+            </div>
+            <div class="flex">
+                <a href="#" class="px-4 py-4 hover:bg-white hover:text-black hover:rounded transition">
+                    Store Locator<i class="fa-solid fa-location-dot pl-1"></i>
+                </a>
+                <a href="#" class="px-4 py-4 hover:bg-white hover:text-black hover:rounded transition">
+                    United kingdom/English
+                </a>
+            </div>
+        </div>
+        
+        <!-- Main Navbar -->
+        <div class="flex justify-between items-center">
+            <div class="flex mt-6 ml-20">
+                <a href="men.html" class="px-2 py-1 text-base hover:bg-white hover:text-black hover:rounded transition">Men</a>
+                <a href="women.html" class="px-2 py-1 text-base hover:bg-white hover:text-black hover:rounded transition">Women</a>
+                <a href="cerawatches.html" class="px-2 py-1 text-base hover:bg-white hover:text-black hover:rounded transition">Ceramic Watches</a>
+                <a href="#" class="px-2 py-1 text-base hover:bg-white hover:text-black hover:rounded transition">Feel Rado</a>
+                <a href="#" class="px-2 py-1 text-base hover:bg-white hover:text-black hover:rounded transition">Services</a>
+            </div>
+            
+            <a href="index.html" class="mr-36">
+                <div class="text-center">
+                    <h2 class="tracking-widest font-serif text-2xl">RADO</h2>
+                    <p class="font-mono">SWITZERLAND</p>
+                </div>
+            </a>
+            
+            <div class="flex mr-20">
+                <i class="text-base px-4 py-4 cursor-pointer hover:bg-white hover:text-black hover:rounded-full transition fa-solid fa-magnifying-glass"></i>
+                <i class="text-base px-4 py-4 cursor-pointer hover:bg-white hover:text-black hover:rounded-full transition fa-regular fa-heart"></i>
+                <a href="login.html"><i class="text-base px-4 py-4 cursor-pointer hover:bg-white hover:text-black hover:rounded-full transition fa-regular fa-user"></i></a>
+                <i class="text-base px-4 py-4 cursor-pointer hover:bg-white hover:text-black hover:rounded-full transition fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="min-h-screen bg-gray-50 py-8">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Ceramic Watch Collection</h2>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <!-- Filters Section -->
+                <aside class="w-full md:w-64">
+                    <h2 class="text-lg font-bold uppercase mb-6">Filters</h2>
+                    
+                    <!-- Relevance Filter -->
+                    <div class="mb-6 border-b border-gray-200 pb-6">
+                        <div class="font-bold mb-4">Relevance</div>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="relevance" checked class="mr-2"> Best Match
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="relevance" class="mr-2"> Newest
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="relevance" class="mr-2"> Price: Low to High
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="relevance" class="mr-2"> Price: High to Low
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Gender Filter -->
+                    <div class="mb-6 border-b border-gray-200 pb-6">
+                        <div class="font-bold mb-4">Gender</div>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> Men
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> Women
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> Unisex
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Material Filter -->
+                    <div class="mb-6 border-b border-gray-200 pb-6">
+                        <div class="font-bold mb-4">Material</div>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" checked class="mr-2"> High-Tech Ceramic
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> Ceramic & Steel
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> Ceramic & Gold
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> Plasma Ceramic
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Case Color Filter -->
+                    <div class="mb-6 border-b border-gray-200 pb-6">
+                        <div class="font-bold mb-4">Case Colour</div>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> White
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" checked class="mr-2"> Black
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> Brown
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> Plasma
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Case Shape Filter -->
+                    <div class="mb-6 border-b border-gray-200 pb-6">
+                        <div class="font-bold mb-4">Case Shape</div>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> Round
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> Square
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> Rectangle
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Collection Filter -->
+                    <div class="mb-6 border-b border-gray-200 pb-6">
+                        <div class="font-bold mb-4">Collection</div>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> True Thinline
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> HyperChrome
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> Ceramica
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2"> Captain Cook
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="text-gray-600 font-bold flex items-center cursor-pointer">
+                        More filters
+                        <span class="ml-1 text-lg">+</span>
+                    </div>
+                </aside>
+                
+                <!-- Products Section -->
+                <main class="flex-1">
+                    <div class="text-gray-600 text-sm mb-4">156 item(s)</div>
+                    
+                    <div class="flex gap-2 mb-6">
+                        <span class="bg-gray-200 px-3 py-1 rounded text-xs">Innovative</span>
+                        <span class="bg-gray-200 px-3 py-1 rounded text-xs">High-Tech</span>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Product Card 1 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:-translate-y-1 transition-transform">
+                            <div class="h-48 bg-gray-100 flex items-center justify-center">
+                                [Product Image]
+                            </div>
+                            <div class="p-4">
+                                <div class="font-bold">True Thinline Skeleton</div>
+                                <div class="text-gray-600 text-xs">Ultra-Thin</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product Card 2 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:-translate-y-1 transition-transform">
+                            <div class="h-48 bg-gray-100 flex items-center justify-center">
+                                [Product Image]
+                            </div>
+                            <div class="p-4">
+                                <div class="font-bold">HyperChrome Ultra Light</div>
+                                <div class="text-gray-600 text-xs">Lightweight</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product Card 3 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:-translate-y-1 transition-transform">
+                            <div class="h-48 bg-gray-100 flex items-center justify-center">
+                                [Product Image]
+                            </div>
+                            <div class="p-4">
+                                <div class="font-bold">Ceramica Automatic</div>
+                                <div class="text-gray-600 text-xs">Timeless</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product Card 4 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:-translate-y-1 transition-transform">
+                            <div class="h-48 bg-gray-100 flex items-center justify-center">
+                                [Product Image]
+                            </div>
+                            <div class="p-4">
+                                <div class="font-bold">True Square Automatic Open Heart</div>
+                                <div class="text-gray-600 text-xs">Modern</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product Card 5 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:-translate-y-1 transition-transform">
+                            <div class="h-48 bg-gray-100 flex items-center justify-center">
+                                [Product Image]
+                            </div>
+                            <div class="p-4">
+                                <div class="font-bold">Captain Cook High-Tech Ceramic</div>
+                                <div class="text-gray-600 text-xs">Durable</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product Card 6 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:-translate-y-1 transition-transform">
+                            <div class="h-48 bg-gray-100 flex items-center justify-center">
+                                [Product Image]
+                            </div>
+                            <div class="p-4">
+                                <div class="font-bold">DiaStar Original Ceramic</div>
+                                <div class="text-gray-600 text-xs">Scratch-Resistant</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product Card 7 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:-translate-y-1 transition-transform">
+                            <div class="h-48 bg-gray-100 flex items-center justify-center">
+                                [Product Image]
+                            </div>
+                            <div class="p-4">
+                                <div class="font-bold">True Secret Swarovski Crystal</div>
+                                <div class="text-gray-600 text-xs">Luxury</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product Card 8 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:-translate-y-1 transition-transform">
+                            <div class="h-48 bg-gray-100 flex items-center justify-center">
+                                [Product Image]
+                            </div>
+                            <div class="p-4">
+                                <div class="font-bold">Coupole Classic Ceramic</div>
+                                <div class="text-gray-600 text-xs">Elegant</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product Card 9 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:-translate-y-1 transition-transform">
+                            <div class="h-48 bg-gray-100 flex items-center justify-center">
+                                [Product Image]
+                            </div>
+                            <div class="p-4">
+                                <div class="font-bold">Centrix Automatic Ceramic</div>
+                                <div class="text-gray-600 text-xs">Precision</div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-10 px-4">
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-between">
+            <!-- Customer Service -->
+            <div class="w-full md:w-1/4 mb-8 md:mb-0">
+                <h3 class="text-lg mb-4">Customer Service</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-sm hover:underline">All our services</a></li>
+                    <li><a href="#" class="text-sm hover:underline">FAQs</a></li>
+                    <li><a href="#" class="text-sm hover:underline">Contact us</a></li>
+                    <li><a href="#" class="text-sm hover:underline">Store Locator</a></li>
+                    <li><a href="#" class="text-sm hover:underline">Catalogue</a></li>
+                </ul>
+            </div>
+            
+            <!-- Legal & Corporate -->
+            <div class="w-full md:w-1/4 mb-8 md:mb-0">
+                <h3 class="text-lg mb-4">Legal & Corporate</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-sm hover:underline">Terms of Use</a></li>
+                    <li><a href="#" class="text-sm hover:underline">Privacy Notice</a></li>
+                    <li><a href="#" class="text-sm hover:underline">Cookies Notice</a></li>
+                    <li><a href="#" class="text-sm hover:underline">Cookie setting</a></li>
+                    <li><a href="#" class="text-sm hover:underline">Impressum</a></li>
+                    <li><a href="#" class="text-sm hover:underline">Jobs</a></li>
+                    <li><a href="#" class="text-sm hover:underline">Press Room</a></li>
+                </ul>
+            </div>
+            
+            <!-- Social Media -->
+            <div class="w-full md:w-1/4 mb-8 md:mb-0">
+                <h3 class="text-lg mb-4">Follow Us</h3>
+                <div class="flex space-x-3">
+                    <a href="#" class="text-white"><i class="fa-brands fa-facebook-f w-6 h-6"></i></a>
+                    <a href="#" class="text-white"><i class="fa-brands fa-instagram w-6 h-6"></i></a>
+                    <a href="#" class="text-white"><i class="fa-brands fa-youtube w-6 h-6"></i></a>
+                    <a href="#" class="text-white"><i class="fa-brands fa-pinterest w-6 h-6"></i></a>
+                </div>
+            </div>
+            
+            <!-- Newsletter -->
+            <div class="w-full md:w-1/4">
+                <h3 class="text-lg mb-4">Newsletter</h3>
+                <input type="email" placeholder="Enter your email address" class="w-full px-2 py-2 mb-3 text-black">
+                <button class="w-full bg-white text-black py-2 px-4 text-sm cursor-pointer hover:bg-gray-500 hover:text-white transition">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+        
+        <div class="max-w-6xl mx-auto border-t border-gray-600 mt-8 pt-4 text-center text-sm">
+            <p>© 2025, Rado Watch Co Ltd. All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

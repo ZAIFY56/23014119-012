@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create new customer account</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Header Design -->
+    <nav class="bg-black text-white">
+        <div class="flex justify-between p-4">
+            <div class="flex items-center">
+                <p class="text-sm">Contact Us 0345 899 1857</p>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:bg-white hover:text-black p-2 rounded">Store Locator<i class="fa-solid fa-location-dot"></i></a>
+                <a href="#" class="hover:bg-white hover:text-black p-2 rounded">United Kingdom/English</a>
+            </div>
+        </div>
+        <div class="flex justify-between p-4">
+            <div class="flex space-x-4">
+                <a href="men.html" class="hover:bg-white hover:text-black p-2 rounded">Men</a>
+                <a href="women.html" class="hover:bg-white hover:text-black p-2 rounded">Women</a>
+                <a href="cerawatches.html" class="hover:bg-white hover:text-black p-2 rounded">Ceramics Watches</a>
+                <a href="#" class="hover:bg-white hover:text-black p-2 rounded">Feel Rado</a>
+                <a href="#" class="hover:bg-white hover:text-black p-2 rounded">Services</a>
+            </div>
+            <a href="index.html" class="text-center">
+                <div class="text-white">
+                    <h2 class="text-2xl tracking-widest">RADO</h2>
+                    <p class="font-mono">SWITZERLAND</p>
+                </div>
+            </a>
+            <div class="flex space-x-4">
+                <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+                <i class="fa-regular fa-heart cursor-pointer"></i>
+                <a href="login.html"><i class="fa-regular fa-user cursor-pointer"></i></a>
+                <i class="fa-solid fa-cart-shopping cursor-pointer"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="min-h-screen max-w-2xl mx-auto p-6">
+        <h1 class="text-2xl font-bold text-gray-800 mb-6">Create New Customer Account</h1>
+        <form>
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Personal Information</h2>
+
+            <div class="mb-6">
+                <div class="mb-4">
+                    <label for="salutation" class="block mb-2 font-bold">Salutation</label>
+                    <select id="salutation" name="salutation" class="w-full p-2 border border-gray-300 rounded">
+                        <option value="">Please select</option>
+                        <option value="mr">Mr.</option>
+                        <option value="mrs">Mrs.</option>
+                        <option value="ms">Ms.</option>
+                        <option value="dr">Dr.</option>
+                    </select>
+                </div>
+
+                <div class="flex flex-wrap mb-4">
+                    <div class="w-1/2 pr-2">
+                        <label for="firstName" class="block mb-2 font-bold">First Name <span class="text-red-500">*</span></label>
+                        <input type="text" id="firstName" name="firstName" required class="w-full p-2 border border-gray-300 rounded">
+                    </div>
+
+                    <div class="w-1/2 pl-2">
+                        <label for="lastName" class="block mb-2 font-bold">Last Name <span class="text-red-500">*</span></label>
+                        <input type="text" id="lastName" name="lastName" required class="w-full p-2 border border-gray-300 rounded">
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block mb-2 font-bold">Date of Birth <span class="text-red-500">*</span></label>
+                    <div class="flex space-x-2">
+                        <select name="month" required class="flex-1 p-2 border border-gray-300 rounded">
+                            <option value="">Month</option>
+                            <!-- Months would be populated here -->
+                        </select>
+                        <select name="day" required class="flex-1 p-2 border border-gray-300 rounded">
+                            <option value="">Day</option>
+                            <!-- Days would be populated here -->
+                        </select>
+                        <select name="year" required class="flex-1 p-2 border border-gray-300 rounded">
+                            <option value="">Year</option>
+                            <!-- Years would be populated here -->
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="address" class="block mb-2 font-bold">Address <span class="text-red-500">*</span></label>
+                    <input type="text" id="address" name="address" required class="w-full p-2 border border-gray-300 rounded">
+                </div>
+
+                <div class="flex flex-wrap mb-4">
+                    <div class="w-1/2 pr-2">
+                        <label for="city" class="block mb-2 font-bold">City <span class="text-red-500">*</span></label>
+                        <input type="text" id="city" name="city" required class="w-full p-2 border border-gray-300 rounded">
+                    </div>
+
+                    <div class="w-1/2 pl-2">
+                        <label for="state" class="block mb-2 font-bold">State/Province <span class="text-red-500">*</span></label>
+                        <select id="state" name="state" required class="w-full p-2 border border-gray-300 rounded">
+                            <option value="">Please select a region, state or province.</option>
+                            <!-- States would be populated here -->
+                        </select>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap mb-4">
+                    <div class="w-1/2 pr-2">
+                        <label for="county" class="block mb-2">County</label>
+                        <input type="text" id="county" name="county" class="w-full p-2 border border-gray-300 rounded">
+                    </div>
+
+                    <div class="w-1/2 pl-2">
+                        <label for="zip" class="block mb-2 font-bold">Zip/Postal Code <span class="text-red-500">*</span></label>
+                        <input type="text" id="zip" name="zip" required class="w-full p-2 border border-gray-300 rounded">
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap mb-4">
+                    <div class="w-1/2 pr-2">
+                        <label for="country" class="block mb-2 font-bold">Country <span class="text-red-500">*</span></label>
+                        <select id="country" name="country" required class="w-full p-2 border border-gray-300 rounded">
+                            <option value="US">United States</option>
+                            <!-- Other countries would be listed here -->
+                        </select>
+                    </div>
+
+                    <div class="w-1/2 pl-2">
+                        <label for="phone" class="block mb-2 font-bold">Phone Number (for customer service purpose) <span class="text-red-500">*</span></label>
+                        <input type="tel" id="phone" name="phone" required class="w-full p-2 border border-gray-300 rounded">
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-6">
+
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Communication</h2>
+
+            <div class="mb-6">
+                <p class="mb-2">I prefer to receive communication from Rado by:</p>
+
+                <div class="flex flex-col space-y-2">
+                    <div class="flex items-center">
+                        <input type="checkbox" id="com-email" name="communication[]" value="email" class="mr-2">
+                        <label for="com-email">Emails</label>
+                    </div>
+
+                    <div class="flex items-center">
+                        <input type="checkbox" id="com-sms" name="communication[]" value="sms" class="mr-2">
+                        <label for="com-sms">SMS</label>
+                    </div>
+
+                    <div class="flex items-center">
+                        <input type="checkbox" id="com-mail" name="communication[]" value="mail" class="mr-2">
+                        <label for="com-mail">Mails</label>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-6">
+
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Sign-in Information</h2>
+
+            <div class="mb-6">
+                <div class="mb-4">
+                    <label for="email" class="block mb-2 font-bold">Email <span class="text-red-500">*</span></label>
+                    <input type="email" id="email" name="email" required class="w-full p-2 border border-gray-300 rounded">
+                </div>
+
+                <div class="mb-4">
+                    <label for="password" class="block mb-2 font-bold">Password <span class="text-red-500">*</span></label>
+                    <input type="password" id="password" name="password" required class="w-full p-2 border border-gray-300 rounded">
+                    <div class="text-sm text-gray-600 mt-1">Password Strength: No Password</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="confirm-password" class="block mb-2 font-bold">Confirm Password <span class="text-red-500">*</span></label>
+                    <input type="password" id="confirm-password" name="confirm-password" required class="w-full p-2 border border-gray-300 rounded">
+                </div>
+
+                <div class="flex flex-col space-y-2">
+                    <div class="flex items-start">
+                        <input type="checkbox" id="terms" name="terms" required class="mr-2">
+                        <label for="terms" class="flex-1">I want to create an account and accept the Terms of Use. I confirm to have read and understood the Privacy Notice.</label>
+                    </div>
+
+                    <div class="flex items-start">
+                        <input type="checkbox" id="marketing" name="marketing" class="mr-2">
+                        <label for="marketing" class="flex-1">I agree that Rado contacts me about Rado products, services, events or offers and consent that Rado processes my personal data for this purpose. I confirm to have read and understood the Privacy Notice and the Cookie notice. I can always unsubscribe by clicking the opt-out link in the communication message.</label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="bg-gray-800 text-white py-2 rounded hover:bg-gray-700 transition duration-300 w-full">Create an Account</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-black text-white py-10">
+        <div class="flex justify-around max-w-6xl mx-auto flex-wrap">
+            <div class="w-1/4">
+                <h3 class="text-lg mb-4">Customer Service</h3>
+                <ul>
+                    <li><a href="#" class="hover:underline">All our services</a></li>
+                    <li><a href="#" class="hover:underline">FAQs</a></li>
+                    <li><a href="#" class="hover:underline">Contact us</a></li>
+                    <li><a href="#" class="hover:underline">Store Locator</a></li>
+                    <li><a href="#" class="hover:underline">Catalogue</a></li>
+                </ul>
+            </div>
+
+            <div class="w-1/4">
+                <h3 class="text-lg mb-4">Legal & Corporate</h3>
+                <ul>
+                    <li><a href="#" class="hover:underline">Terms of Use</a></li>
+                    <li><a href="#" class="hover:underline">Privacy Notice</a></li>
+                    <li><a href="#" class="hover:underline">Cookies Notice</a></li>
+                    <li><a href="#" class="hover:underline">Cookie setting</a></li>
+                    <li><a href="#" class="hover:underline">Impressum</a></li>
+                    <li><a href="#" class="hover:underline">Jobs</a></li>
+                    <li><a href="#" class="hover:underline">Press Room</a></li>
+                </ul>
+            </div>
+
+            <div class="w-1/4">
+                <h3 class="text-lg mb-4">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-gray-400"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-gray-400"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-gray-400"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="hover:text-gray-400"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+
+            <div class="w-1/4">
+                <h3 class="text-lg mb-4">Newsletter</h3>
+                <input type="email" placeholder="Enter your email address" class="w-full p-2 border border-gray-300 rounded mb-2">
+                <button class="bg-white text-black py-2 rounded hover:bg-gray-200 transition duration-300 w-full">Subscribe</button>
+            </div>
+        </div>
+
+        <div class="text-center mt-6 border-t border-gray-700 pt-4">
+            <p>© 2025, Rado Watch Co Ltd. All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
