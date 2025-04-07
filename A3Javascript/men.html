@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENS COLLECTION'S</title>
+    <link rel="icon" type="image/x-icon" href="https://www.freelogovectors.net/wp-content/uploads/2018/09/rado_logo-600x123.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="javascript/men.js"></script>
+    <style>
+        .hidden { display: none; }
+        .filter-section h3 { transition: all 0.3s ease; }
+        .filter-section h3:hover { color: #555; }
+        .quick-view-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Header Design -->
+    <nav class="bg-black text-white">
+        <div class="flex justify-between p-4">
+            <div class="flex items-center">
+                <p class="text-sm">Contact Us 0345 899 1857</p>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:bg-white hover:text-black p-2 rounded">Store Locator<i class="fa-solid fa-location-dot"></i></a>
+                <a href="#" class="hover:bg-white hover:text-black p-2 rounded">United Kingdom/English</a>
+            </div>
+        </div>
+        <div class="flex justify-between p-4">
+            <div class="flex space-x-4">
+                <a href="men.html" class="hover:bg-white hover:text-black p-2 rounded">Men</a>
+                <a href="women.html" class="hover:bg-white hover:text-black p-2 rounded">Women</a>
+                <a href="cerawatches.html" class="hover:bg-white hover:text-black p-2 rounded">Ceramics Watches</a>
+                <a href="#" class="hover:bg-white hover:text-black p-2 rounded">Feel Rado</a>
+                <a href="#" class="hover:bg-white hover:text-black p-2 rounded">Services</a>
+            </div>
+            <a href="index.html" class="text-center">
+                <div class="text-white">
+                    <h2 class="text-2xl tracking-widest">RADO</h2>
+                    <p class="font-mono">SWITZERLAND</p>
+                </div>
+            </a>
+            <div class="flex space-x-4">
+                <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+                <i class="fa-regular fa-heart cursor-pointer"></i>
+                <a href="login.html"><i class="fa-regular fa-user cursor-pointer"></i></a>
+                <i class="fa-solid fa-cart-shopping cursor-pointer"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="min-h-screen p-4">
+        <h2 class="text-2xl font-bold mb-4">All Watches</h2>
+
+        <div class="flex max-w-6xl mx-auto">
+            <aside class="w-1/4 pr-6">
+                <h2 class="text-lg font-bold mb-4">Filters</h2>
+
+                <div class="mb-6 border-b pb-4">
+                    <div class="font-bold mb-2">Relevance</div>
+                    <div class="flex flex-col space-y-2">
+                        <label class="flex items-center">
+                            <input type="radio" name="relevance" checked class="mr-2"> Best Match
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="relevance" class="mr-2"> Newest
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="relevance" class="mr-2"> Price: Low to High
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="relevance" class="mr-2"> Price: High to Low
+                        </label>
+                    </div>
+                </div>
+
+                <div class="mb-6 border-b pb-4">
+                    <div class="font-bold mb-2">Gender</div>
+                    <div class="flex flex-col space-y-2">
+                        <label class="flex items-center">
+                            <input type="checkbox" name="Gender" value="men" class="mr-2"> Men
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox"  name="Gender" value="women" class="mr-2"> Women
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" name="Gender" value="unisex" class="mr-2"> Unisex
+                        </label>
+                    </div>
+                </div>
+
+                <div class="mb-6 border-b pb-4">
+                    <div class="font-bold mb-2">Material</div>
+                    <div class="flex flex-col space-y-2">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> Stainless Steel
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> Ceramic
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> Titanium
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> Leather
+                        </label>
+                    </div>
+                </div>
+
+                <div class="mb-6 border-b pb-4">
+                    <div class="font-bold mb-2">Case Colour</div>
+                    <div class="flex flex-col space-y-2">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> Silver
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> Black
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> Gold
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> Blue
+                        </label>
+                    </div>
+                </div>
+
+                <div class="mb-6 border-b pb-4">
+                    <div class="font-bold mb-2">Case Shape</div>
+                    <div class="flex flex-col space-y-2">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> Round
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> Square
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> Rectangle
+                        </label>
+                    </div>
+                </div>
+
+                <div class="mb-6 border-b pb-4">
+                    <div class="font-bold mb-2">Dial Colour</div>
+                    <div class="flex flex-col space-y-2">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> Black
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> White
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> Blue
+                        </label>
+                    </div>
+                </div>
+                <button onclick="applyFilters()" class="w-full bg-black text-white py-2 rounded mb-4">
+                    Apply Filters
+                </button>
+                <div class="text-gray-600 font-bold cursor-pointer">More filters <span class="text-lg">+</span></div>
+            </aside>
+
+            <main class="flex-1">
+                <div class="text-gray-600 mb-4">292 item(s)</div>
+
+                <div class="flex space-x-2 mb-4">
+                    <span class="bg-gray-200 px-2 py-1 rounded text-sm">Special Edition</span>
+                    <span class="bg-gray-200 px-2 py-1 rounded text-sm">New</span>
+                    <span class="bg-gray-200 px-2 py-1 rounded text-sm cursor-pointer" onclick="sortProducts('price-low-high')">Price Low-High</span>
+                    <span class="bg-gray-200 px-2 py-1 rounded text-sm cursor-pointer" onclick="sortProducts('price-high-low')">Price High-Low</span>
+                    <span class="bg-gray-200 px-2 py-1 rounded text-sm cursor-pointer" onclick="sortProducts('newest')">Newest</span>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center">
+                            <img style="width: 250px;height: 150px;" src="https://imboldn.com/wp-content/uploads/2022/04/Rado-Captain-Cook-Over-Pole-Limited-Edition-main-800x450.jpg" alt="Captain Cook Over-Pole Limited Edition">
+                        </div>
+                        <div class="p-4">
+                            <div class="font-bold">Captain Cook Over-Pole Limited Edition</div>
+                            <div class="text-gray-500 text-sm">Special Edition</div>
+                        </div>
+                        <button onclick="quickView('product1')" class="text-sm underline">Quick View</button>
+                        <button class="wishlist-btn text-sm" data-product="Captain Cook Over-Pole">
+                            <i class="far fa-heart"></i> Wishlist
+                        </button>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center">
+                            <img style="width: 250px;height: 150px;" src="https://th.bing.com/th/id/OIP.WZDRGabmdaF5VTkKqxqjlAHaE8?rs=1&pid=ImgDetMain" alt="Captain Cook High-Tech Ceramic Skeleton">
+                        </div>
+                        <div class="p-4">
+                            <div class="font-bold">DiaStar Original X Tej Chauhan Special Edition</div>
+                            <div class="text-gray-500 text-sm">Special Edition</div>
+                        </div>
+                        <button onclick="quickView('product1')" class="text-sm underline">Quick View</button>
+                        <button class="wishlist-btn text-sm" data-product="Captain Cook Over-Pole">
+                            <i class="far fa-heart"></i> Wishlist
+                        </button>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center">
+                            <img style="width: 250px;height: 150px;" src="https://tse3.mm.bing.net/th/id/OIP.0dD4H8j2RCob7Leali4j7QHaGT?rs=1&pid=ImgDetMain" alt="Rado Captain Cook Automatic">
+                        </div>
+                        <div class="p-4">
+                            <div class="font-bold">Captain Cook High-Tech Ceramic Skeleton</div>
+                            <div class="text-gray-500 text-sm">New</div>
+                        </div>
+                        <button onclick="quickView('product1')" class="text-sm underline">Quick View</button>
+                        <button class="wishlist-btn text-sm" data-product="Captain Cook Over-Pole">
+                            <i class="far fa-heart"></i> Wishlist
+                        </button>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center">
+                            <img style="width: 250px;height: 150px;" src="https://cdn.shopify.com/s/files/1/0283/1618/products/hyperchrome_r32256712_sld_web_1229x.png?v=1670206346" alt="Rado HyperChrome Automatic">
+                        </div>
+                        <div class="p-4">
+                            <div class="font-bold">Captain Cook High-Tech Ceramic Skeleton</div>
+                            <div class="text-gray-500 text-sm">New</div>
+                        </div>
+                        <button onclick="quickView('product1')" class="text-sm underline">Quick View</button>
+                        <button class="wishlist-btn text-sm" data-product="Captain Cook Over-Pole">
+                            <i class="far fa-heart"></i> Wishlist
+                        </button>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center">
+                            <img style="width: 250px;height: 150px;" src="https://tse4.mm.bing.net/th/id/OIP.OmXFuopIQNFDr5mKprkZYAHaLJ?rs=1&pid=ImgDetMain" alt="Rado True Thinline">
+                        </div>
+                        <div class="p-4">
+                            <div class="font-bold">Captain Cook High-Tech Ceramic Skeleton</div>
+                            <div class="text-gray-500 text-sm">New</div>
+                        </div>
+                        <button onclick="quickView('product1')" class="text-sm underline">Quick View</button>
+                        <button class="wishlist-btn text-sm" data-product="Captain Cook Over-Pole">
+                            <i class="far fa-heart"></i> Wishlist
+                        </button>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center">
+                            <img style="width: 250px;height: 150px;" src="https://tse4.mm.bing.net/th/id/OIP.OmXFuopIQNFDr5mKprkZYAHaLJ?rs=1&pid=ImgDetMain" alt="Rado True Thinline">
+                        </div>
+                        <div class="p-4">
+                            <div class="font-bold">Captain Cook High-Tech Ceramic Skeleton</div>
+                            <div class="text-gray-500 text-sm">New</div>
+                        </div>
+                        <button onclick="quickView('product1')" class="text-sm underline">Quick View</button>
+                        <button class="wishlist-btn text-sm" data-product="Captain Cook Over-Pole">
+                            <i class="far fa-heart"></i> Wishlist
+                        </button>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center">
+                            <img style="width: 250px;height: 150px;" src="https://th.bing.com/th/id/R.65cb6e29f42922a9dfeda33c4f737891?rik=y3p%2fHHQIDKVb1A&pid=ImgRaw&r=0" alt="Rado HyperChrome Ultra Light">
+                        </div>
+                        <div class="p-4">
+                            <div class="font-bold">Captain Cook High-Tech Ceramic Skeleton</div>
+                            <div class="text-gray-500 text-sm">New</div>
+                        </div>
+                        <button onclick="quickView('product1')" class="text-sm underline">Quick View</button>
+                        <button class="wishlist-btn text-sm" data-product="Captain Cook Over-Pole">
+                            <i class="far fa-heart"></i> Wishlist
+                        </button>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center">
+                            <img style="width: 250px;height: 150px;" src="https://spaces.nyjcdn.com/images/products/10/rado-sintra-chronograph-345mm-watch-7157-39.jpeg" alt="Rado Sintra">
+                        </div>
+                        <div class="p-4">
+                            <div class="font-bold">Captain Cook High-Tech Ceramic Skeleton</div>
+                            <div class="text-gray-500 text-sm">New</div>
+                        </div>
+                        <button onclick="quickView('product1')" class="text-sm underline">Quick View</button>
+                        <button class="wishlist-btn text-sm" data-product="Captain Cook Over-Pole">
+                            <i class="far fa-heart"></i> Wishlist
+                        </button>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center">
+                            <img style="width: 250px;height: 150px;" src="https://th.bing.com/th/id/R.6b1ba003af79bb44b0ff8a4b4b07c2d4?rik=JqaBzRlYAS0a0A&riu=http%3a%2f%2ftimeandtidewatches.com%2fwp-content%2fuploads%2f2017%2f10%2fRado-Ceramica-Black-1.jpg&ehk=gufr6kRdAadoQxgtc2FfX55vEF71LI4egpqCHGsKCUk%3d&risl=&pid=ImgRaw&r=0" alt="Rado Ceramica">
+                        </div>
+                        <div class="p-4">
+                            <div class="font-bold">Captain Cook High-Tech Ceramic Skeleton</div>
+                            <div class="text-gray-500 text-sm">New</div>
+                        </div>
+                        <button onclick="quickView('product1')" class="text-sm underline">Quick View</button>
+                        <button class="wishlist-btn text-sm" data-product="Captain Cook Over-Pole">
+                            <i class="far fa-heart"></i> Wishlist
+                        </button>
+                    </div>
+                </div>
+                
+            </main>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-black text-white py-10">
+        <div class="flex justify-around max-w-6xl mx-auto flex-wrap">
+            <div class="w-1/4">
+                <h3 class="text-lg mb-4">Customer Service</h3>
+                <ul>
+                    <li><a href="#" class="hover:underline">All our services</a></li>
+                    <li><a href="#" class="hover:underline">FAQs</a></li>
+                    <li><a href="#" class="hover:underline">Contact us</a></li>
+                    <li><a href="#" class="hover:underline">Store Locator</a></li>
+                    <li><a href="#" class="hover:underline">Catalogue</a></li>
+                </ul>
+            </div>
+
+            <div class="w-1/4">
+                <h3 class="text-lg mb-4">Legal & Corporate</h3>
+                <ul>
+                    <li><a href="#" class="hover:underline">Terms of Use</a></li>
+                    <li><a href="#" class="hover:underline">Privacy Notice</a></li>
+                    <li><a href="#" class="hover:underline">Cookies Notice</a></li>
+                    <li><a href="#" class="hover:underline">Cookie setting</a></li>
+                    <li><a href="#" class="hover:underline">Impressum</a></li>
+                    <li><a href="#" class="hover:underline">Jobs </a></li>
+                    <li><a href="#" class="hover:underline">Press Room</a></li>
+                </ul>
+            </div>
+
+            <div class="w-1/4">
+                <h3 class="text-lg mb-4">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-gray-400"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-gray-400"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-gray-400"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="hover:text-gray-400"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+
+            <div class="w-1/4">
+                <h3 class="text-lg mb-4">Newsletter</h3>
+                <input type="email" placeholder="Enter your email address" class="w-full p-2 border border-gray-300 rounded mb-2">
+                <button class="w-full p-2 bg-white text-black rounded hover:bg-gray-200 transition">Subscribe</button>
+            </div>
+        </div>
+
+        <div class="text-center mt-6 border-t border-gray-700 pt-4">
+            <p>© 2025, Rado Watch Co Ltd. All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="javascript/myjs.js" defer></script>
+</body>
+
+</html>
